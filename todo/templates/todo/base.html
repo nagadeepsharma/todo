@@ -11,11 +11,24 @@
 
     <link rel="icon" type="image/png"  href="{% static 'todo/logo.png' %}">
     <title>Todo</title>
+    <style>
+        .navbar{
+            background-color: #779ecb;
+        }
+        .list-group-item-danger{
+            background-color: #779ecb;
+            color: black;
+        }
+        .list-group-item-danger:hover{
+            color: black !important;
+            background-color: #779ecb !important;
+        }
+    </style>
 </head>
 <body>
 
 
-<nav class="navbar navbar-expand-md navbar-light bg-warning">
+<nav class="navbar navbar-expand-md navbar-light ">
 <div class="container">
     <a class="navbar-brand" href="{% url 'home' %}">
          <img src="{% static 'todo/logo.png' %}" width="30" height="30" class="d-inline-block align-top">
